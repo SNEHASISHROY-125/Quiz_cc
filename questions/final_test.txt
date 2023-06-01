@@ -1,0 +1,1 @@
+{'Q.1': {'Question1': 'SKY IS :', 'Type': 'FILL_BLANKS', 'Answer': 'BLUE'}, 'Q.2': {'Question2': 'IOT , MARKET VALUATION?', 'Type': 'MCQ', 'Options': {'A': '10BN', 'B': '8BN', 'C': '20BN', 'D': 'NONE'}, 'Answer': 'C'}, 'Q.3': {'Question3': 'PYTHON IS FAST:', 'Type': 'T-F', 'Options': {'A': 'T', 'B': 'F'}, 'Answer': 'F'}}
