@@ -4,7 +4,7 @@ from prettytable import PrettyTable
 
 import os
 
-
+test_input = Correctinput()
 '''*************************************[FUNCTIONS]**********************************************'''
 
 def txt_decoder(file):
@@ -43,8 +43,16 @@ class Quiz:
                 print(f'{q}\n{list_opt}')
             else:
                 print(f'{q}\n{list_opt}')
-            user_input = input('Choose the correct one >').upper()
             
+            if t =='FILL_BLANKS':
+                  user_input = input('Choose the correct one >' ).upper()
+            else:
+                if t == 'T-F':
+                    user_input = test_input.correctinput('Choose the correct one >' , ['T','F']).upper()
+                elif t == 'MCQ':
+                    user_input = test_input.correctinput('Choose the correct one >' , ['A','B','C','D']).upper()
+               
+
             if user_input == a:
                 points += 1 
                 print(f'Correct answer!\n+1  Current Score {points}')
@@ -57,7 +65,7 @@ class Quiz:
 
 '''*************************************[INPUT]******************************************'''
 table = PrettyTable()
-test_input = Correctinput()
+
 
 file_ = input('File name:\nto import\n')
 file_name = file_ + '.txt'

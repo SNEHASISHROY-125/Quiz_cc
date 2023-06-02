@@ -13,7 +13,7 @@ class Correctinput:
             input_1 = int(input_1)
             while input_1 not in x:
                 input_1 = int(input('Invalid input!\n'))
-        system('cls')
+        # system('cls')
         return input_1
             
 
